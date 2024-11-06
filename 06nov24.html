@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(let i = 1; i<=100; i++){
+        let box1 = document.createElement('div'); // создать элемент 'div'
+        box1.style.width = '100px'; // ширина
+        box1.style.height = '100px'; // высота
+        document.body.append(box1); // добавить 'div' в 'body'
+        box1.style.border = "1px solid";
+        box1.style.display.wrap;
+        box1.innerText = i
+        for(let t = 1; t<=10; t++){
+            let box2 = document.createElement('div'); // создать элемент 'div'
+        box2.style.width = '10px'; // ширина
+        box2.style.height = '10px'; // высота
+        box1.append(box2); // добавить 'div' в 'body'
+        box2.style.border = "1px solid"
+        box2.innerText = t
+        }
+    }
+    </script>
+</body>
+</html>
